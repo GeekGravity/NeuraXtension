@@ -238,7 +238,7 @@ footer{
     transition: transform 0.3s ease; /* Smooth animation */
   }
   
-.bob:not(.active)::after {
+.time:not(.active)::after {
     transform: scaleX(0); /* Expands the underline on hover */
   }
   
@@ -250,7 +250,7 @@ footer{
 .card{
     background-color: #07203b;
     color: white;
-    width: 28rem;
+    width: 95%;
 }
 
 /* Get Involved styling */
