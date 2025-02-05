@@ -82,10 +82,15 @@ footer{
 .homePageBtn{
     margin-top: 300px;
     font-family: Audiowide, sans-serif;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.836);
     color: #07203b;
     position: absolute; 
     text-align: center;
+}
+
+.homePageBtn:hover{
+    background-color: white;
+    color: #07203b;
 }
 
 .homeGroupImg{
@@ -229,9 +234,9 @@ footer{
     content: ''; /* Creates the underline */
     position: absolute;
     left: 0;
-    bottom: -1px; /* Adjusts how far below the text the underline appears */
+    bottom: -0px; /* Adjusts how far below the text the underline appears */
     width: 100%; /* Makes the underline span the text width */
-    height: 1px; /* Thickness of the underline */
+    height: 2px; /* Thickness of the underline */
     background-color: white; /* Color of the underline */
     transform: scaleX(1); /* Initially hidden */
     transform-origin: left;
@@ -259,7 +264,7 @@ footer{
     padding-top: 0em;
 }
 
-.GetInvolved h2{
+.Membership h2{
     font-family: Audiowide, sans-serif;
     text-align: center;
     font-size: 3em;
@@ -268,16 +273,17 @@ footer{
     padding-top: 0%;
 }
 
-.GetInvolved p{
+.Membership p{
     color: white;
 }
 
-.GetInvolved button{
-    width: 75%;
-    font-size: 1.5em;
+.Membership button{
+
+    width: clamp(250px, 20vw, 400px);
+    font-size: 1.3em;
     border-radius: 20px;
     background-color:white;
-    color: #b966bf;
+    color: #07203b;
     font-family: Audiowide, sans-serif;
 }
 
