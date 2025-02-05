@@ -112,62 +112,16 @@ footer{
     line-height: 1.5;
 }
 
-
-/* Team section styling */
-
-.Team{
-    background-color: #b966bf;
-    color: white;
-    border-radius: 0% 0% 0% 0%;
-}
-
-.Team h1{
-    font-family: Audiowide, sans-serif;
-    text-align: center;
-    font-size: 3em;
-    color: white ;
-    margin-top: 1.5em;
-    padding-top: 5%;
-}
-
-#teamphotos{
-    border-radius: 50%;
-    width: 50%;
-    height: auto;
-    margin-top: 2.5em;
-    margin-left: 26%;
-}
-
-.teamTitles{
-    margin-top: 1em;
-}
-
-.teamTitles h1{
-    font-family: Audiowide, sans-serif;
-    font-size: 1.5em;
-    color: white;
-}
-
-.teamTitles h2{
-    font-size: 1.2em;
-    color: white;
-}
-
-
 /* About Us styling */
-
-#aboutUsPic{
-    width: auto;
-    border-radius: 8%;
-    height: 60vh;
-    margin-left: 13%;
-}
 
 .MissionBox{
     background-color: #b966bf;
-    border-radius: 0 0 40% 40%;
-    padding-bottom: 10%;
-    padding-top: 2.5%;
+    /* border-radius: 0 0 4em 4em; */
+}
+
+.MissionBox img{
+    width: clamp(200px, 80%, 600px);
+    border-radius: 8%;
 }
 
 .MissionBox h1{
@@ -188,10 +142,41 @@ footer{
     margin-top: 1.5em;
 }
 
-#ValuesPic{
-    width: auto;
+.ValuesBox img{
+    width: 80%;
     border-radius: 8%;
-    height: 40vh;
+}
+
+/* Team section styling */
+
+.Team{
+    background-color: #b966bf;
+    color: white;
+    border-radius: 0% 0% 0% 0%;
+}
+
+.Team h1{
+    font-family: Audiowide, sans-serif;
+    text-align: center;
+    font-size: 2.5em;
+    color: white ;
+}
+
+.teamMember img{
+    border-radius: 50%;
+    width: 40%;
+    height: auto;
+}
+
+.teamMember h1{
+    font-family: Audiowide, sans-serif;
+    font-size: 1.5em;
+    color: white;
+}
+
+.teamMember h2{
+    font-size: 1.2em;
+    color: white;
 }
 
 
