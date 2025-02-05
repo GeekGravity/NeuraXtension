@@ -333,8 +333,13 @@ footer{
 
 
 .Contact button{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.836);
     color: #b966bf;
     width: 25%;
     font-family: Audiowide, sans-serif;
+}
+
+.Contact button:hover{
+    background-color: white;
+    color: #b966bf;
 }
