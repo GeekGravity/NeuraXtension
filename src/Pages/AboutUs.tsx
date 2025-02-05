@@ -2,7 +2,7 @@ import "./styles.css";
 import aboutus from "./Pictures/About-us.jpg";
 import Team from "./Team";
 
-function Mission() {
+function AboutUs() {
   return (
     <>
       <div className=" MissionBox">
@@ -68,4 +68,4 @@ function Mission() {
   );
 }
 
-export default Mission;
+export default AboutUs;

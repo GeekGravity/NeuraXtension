@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
-import Mission from "./Pages/Mission";
+import AboutUs from "./Pages/AboutUs";
 import Events from "./Pages/Events";
 import GetInvolved from "./Pages/GetInvolved";
 import ContactUs from "./Pages/ContactUs";
@@ -14,7 +14,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Mission" element={<Mission />} />
+        <Route path="/About-Us" element={<AboutUs />} />
         <Route path="/Events" element={<Events />} />
         <Route path="/Get-Involved" element={<GetInvolved />} />
         <Route path="/Contact-Us" element={<ContactUs />} />

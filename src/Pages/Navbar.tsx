@@ -27,34 +27,11 @@ function NavBar() {
                 <a
                   className="nav-link active"
                   aria-current="page"
-                  href="/Mission"
+                  href="/About-Us"
                 >
                   About Us
                 </a>
               </li>
-              {/* <li className="nav-item dropdown mx-3">
-                <a
-                  className="nav-link dropdown-toggle "
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  About us
-                </a>
-                <ul className="dropdown-menu">
-                  <li>
-                    <a className="dropdown-item" href="/Mission">
-                      Mission
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="/Team">
-                      Team
-                    </a>
-                  </li>
-                </ul>
-              </li> */}
               <li className="nav-item active mx-3">
                 <a
                   className="nav-link active"
