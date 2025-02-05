@@ -1,0 +1,340 @@
+/* navigation bar styling*/
+
+.navbar {
+    background-color: #07203b;
+    font-size: 1em;
+  }
+
+.nav-link {
+    color: #b966bf !important; /* Makes the text white */
+  }
+
+.navbar-toggler{
+    color: transparent;
+    background-color:transparent    ;
+    border: none;
+}
+
+.navbar-toggler-icon{
+    filter: invert(1);;
+}
+
+/* footer styling */
+
+footer{
+    margin-top: 3%;
+    background-color: #07203b;
+    color: #b966bf;
+}
+
+.Navigation{
+    padding-left: 10%;
+    color: white;
+}
+
+.Navigation a{
+    color: #b966bf;
+    text-decoration: none;
+}
+
+.Navigation h3{
+    font-weight: normal;
+    font-size: 1em;
+    color: #b966bf;
+    font-weight: BOLD;
+}
+
+
+/* Home page styling */
+
+.homePageBg{
+    position: relative;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 85vh; /* Adjust as needed */
+}
+
+.homePageBg img{
+    width: 100%;
+    height: 85vh;
+    object-fit: cover;
+}
+
+.homePageOverlay{
+    position: absolute; 
+    text-align: center;
+}
+
+.homePageOverlay h1 {
+    font-size: 2 rem; 
+    font-weight: bold;
+    color: white; 
+    font-family: Audiowide, sans-serif;
+}
+
+.homePageOverlay p {  
+    font-size: 1.3rem; 
+    margin-top: 15px;
+    color: white; 
+}
+
+.homePageBtn{
+    margin-top: 300px;
+    font-family: Audiowide, sans-serif;
+    background-color: white;
+    color: #07203b;
+    position: absolute; 
+    text-align: center;
+}
+
+.homeGroupImg{
+    border-radius: 10%;
+    width: 80%;
+}
+
+.homeContent h2 {
+    font-size: 2.5em; 
+    font-weight: bold;
+    color: #b966bf;
+    font-family: Audiowide, sans-serif;
+}
+
+.homeContent p {
+    color: #07203b;
+    font-weight: 100;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+
+/* Team section styling */
+
+.Team{
+    background-color: #b966bf;
+    color: white;
+    border-radius: 0% 0% 0% 0%;
+}
+
+.Team h1{
+    font-family: Audiowide, sans-serif;
+    text-align: center;
+    font-size: 3em;
+    color: white ;
+    margin-top: 1.5em;
+    padding-top: 5%;
+}
+
+#teamphotos{
+    border-radius: 50%;
+    width: 50%;
+    height: auto;
+    margin-top: 2.5em;
+    margin-left: 26%;
+}
+
+.teamTitles{
+    margin-top: 1em;
+}
+
+.teamTitles h1{
+    font-family: Audiowide, sans-serif;
+    font-size: 1.5em;
+    color: white;
+}
+
+.teamTitles h2{
+    font-size: 1.2em;
+    color: white;
+}
+
+
+/* About Us styling */
+
+#aboutUsPic{
+    width: auto;
+    border-radius: 8%;
+    height: 60vh;
+    margin-left: 13%;
+}
+
+.MissionBox{
+    background-color: #b966bf;
+    border-radius: 0 0 40% 40%;
+    padding-bottom: 10%;
+    padding-top: 2.5%;
+}
+
+.MissionBox h1{
+    font-family: Audiowide, sans-serif;
+    color: white;
+}
+
+.MissionBox p{
+    color: white;
+}
+
+.ValuesBox h2{
+    font-family: Audiowide, sans-serif;
+    font-weight: bold;
+    font-size: 2.5em;
+    text-align: center;
+    color:#07203b ;
+    margin-top: 1.5em;
+}
+
+#ValuesPic{
+    width: auto;
+    border-radius: 8%;
+    height: 40vh;
+}
+
+
+/* Events styling */
+
+.Events{ 
+    background-image: url('./Pictures/Eventsbg.jpg');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5%;
+}
+
+.Events h2{
+    font-weight: normal;
+    font-family: Audiowide, sans-serif;
+    text-align: left;
+    font-size: 2.5em;
+    color: white;
+    padding-left: 0em;
+}
+
+.EventsTime{
+    font-weight: normal;
+    text-align: left;
+    padding-top: 1em;
+    padding-left: 0em;
+}
+
+.time {
+    color: white;
+    text-decoration: none;
+    font-size: 1.35em;
+    font-weight: 500;
+    position: relative;
+    display: inline-block; /* Ensures the clickable area matches the text width */
+  }
+  
+.time::after {
+    content: ''; /* Creates the underline */
+    position: absolute;
+    left: 0;
+    bottom: -1px; /* Adjusts how far below the text the underline appears */
+    width: 100%; /* Makes the underline span the text width */
+    height: 1px; /* Thickness of the underline */
+    background-color: white; /* Color of the underline */
+    transform: scaleX(1); /* Initially hidden */
+    transform-origin: left;
+    transition: transform 0.3s ease; /* Smooth animation */
+  }
+  
+.bob:not(.active)::after {
+    transform: scaleX(0); /* Expands the underline on hover */
+  }
+  
+.Events h5{
+    font-family: Audiowide, sans-serif;
+    color: white;
+}
+
+.card{
+    background-color: #07203b;
+    color: white;
+    width: 28rem;
+}
+
+/* Get Involved styling */
+
+.GetInvolved{
+    padding-top: 0em;
+}
+
+.GetInvolved h2{
+    font-family: Audiowide, sans-serif;
+    text-align: center;
+    font-size: 3em;
+    color: white ;
+    margin-top: 0em;
+    padding-top: 0%;
+}
+
+.GetInvolved p{
+    color: white;
+}
+
+.GetInvolved button{
+    width: 75%;
+    font-size: 1.5em;
+    border-radius: 20px;
+    background-color:white;
+    color: #b966bf;
+    font-family: Audiowide, sans-serif;
+}
+
+.Membership{
+    background-image: url('./Pictures/Contactbg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5%;
+      
+}
+
+/* Contact Us */
+
+.Contact{
+    background-image: url('./Pictures/GetInvolvedBg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5%;
+}
+
+.Contact h2{
+    font-family: Audiowide, sans-serif;
+    text-align: left;
+    font-size: 3.5em;
+    color: white ;
+}
+
+.Contact p{
+    color: white;
+    font-size: 1.1em;
+}
+
+.Contact label{
+    color: white;
+    font-size: 1.1em;
+}
+
+.form-control{
+    background-color: transparent !important; /* Makes the box transparent */
+    border: none; /* Removes all borders */
+    border-bottom: 2px solid white; /* Adds only a bottom border */
+    color: white !important; /* Text color */
+    padding: 5px 0; /* Optional: Adjust vertical spacing inside the box */
+    margin-bottom: 15px; /* Adds spacing below the input box */
+    outline: none; /* Removes default focus outline */
+}
+
+.form-control::placeholder{
+    color: rgb(226, 226, 226);
+}
+
+
+.Contact button{
+    background-color: white;
+    color: #b966bf;
+    width: 25%;
+    font-family: Audiowide, sans-serif;
+}
