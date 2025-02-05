@@ -27,28 +27,24 @@ function Home() {
       </section>
       <section className="container-fluid my-4 pb-3">
         <div className="row align-items-center">
-          <div className="col-md-6 my-3 d-flex justify-content-center">
+          <div className="col-lg-6 my-3 d-flex justify-content-center">
             <img src={groupImg} className="img-fluid homeGroupImg" />
           </div>
-          <div className="col-md-6 text-center my-md-5 pt-3">
-            <div className="row justify-content-center">
-              <div className="col-10 col-md-8 homeContent">
-                <h2>WHO WE ARE</h2>
-                <p className="my-4">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Neque, iste molestiae beatae, maiores deserunt in voluptatibus
-                  aspernatur architecto excepturi delectus soluta? Ipsa,
-                  deleniti dolorem hic consequatur repellat eveniet quidem
-                  voluptate necessitatibus dolorum delectus minus vitae, ut,
-                  veritatis sint ipsum magnam autem nam ex deserunt debitis
-                  eaque ratione! Nobis, quidem assumenda stiae beatae, maiores
-                  deserunt in voluptatibus aspernatur architecto excepturi
-                  delectus soluta? Ipsa, deleniti dolorem hic consequatur
-                  repellat eveniet quidem voluptate necessitatibus dolorum
-                  delectus minus vitae, ut, veritatis sint ipsum magnam au.
-                </p>
-              </div>
-            </div>
+          <div className="col-lg-6 text-center my-md-5 pt-3 homeContent">
+            <h2>WHO WE ARE</h2>
+            <p className="my-4 mx-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
+              iste molestiae beatae, maiores deserunt in voluptatibus aspernatur
+              architecto excepturi delectus soluta? Ipsa, deleniti dolorem hic
+              consequatur repellat eveniet quidem voluptate necessitatibus
+              dolorum delectus minus vitae, ut, veritatis sint ipsum magnam
+              autem nam ex deserunt debitis eaque ratione! Nobis, quidem
+              assumenda stiae beatae, maiores deserunt in voluptatibus
+              aspernatur architecto excepturi delectus soluta? Ipsa, deleniti
+              dolorem hic consequatur repellat eveniet quidem voluptate
+              necessitatibus dolorum delectus minus vitae, ut, veritatis sint
+              ipsum magnam au.
+            </p>
           </div>
         </div>
       </section>

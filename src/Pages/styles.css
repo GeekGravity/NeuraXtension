@@ -109,7 +109,6 @@ footer{
     color: #07203b;
     font-weight: 100;
     font-size: 1.25rem;
-    line-height: 1.5;
 }
 
 /* About Us styling */
@@ -131,6 +130,8 @@ footer{
 
 .MissionBox p{
     color: white;
+    font-size: 1.25rem;
+    font-weight: 100;
 }
 
 .ValuesBox h2{
