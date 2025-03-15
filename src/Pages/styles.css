@@ -7,11 +7,12 @@
 
 .nav-link {
     color: #b966bf !important; /* Makes the text white */
+    font-family: Audiowide, sans-serif;
   }
 
 .navbar-toggler{
     color: transparent;
-    background-color:transparent    ;
+    background-color:transparent;
     border: none;
 }
 
@@ -52,12 +53,12 @@ footer{
     display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-    height: 85vh; /* Adjust as needed */
+    height: 87vh; /* Adjust as needed */
 }
 
 .homePageBg img{
     width: 100%;
-    height: 85vh;
+    height: 87vh;
     object-fit: cover;
 }
 
@@ -82,14 +83,14 @@ footer{
 .homePageBtn{
     margin-top: 300px;
     font-family: Audiowide, sans-serif;
-    background-color: rgba(255, 255, 255, 0.836);
+    background-color: white;
     color: #07203b;
     position: absolute; 
     text-align: center;
 }
 
 .homePageBtn:hover{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.836);
     color: #07203b;
 }
 

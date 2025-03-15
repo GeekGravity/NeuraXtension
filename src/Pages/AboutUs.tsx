@@ -12,18 +12,17 @@ function AboutUs() {
         <div className="col-md-6 col-12 text-center my-2 py-md-5 my-lg-0">
           <h1 className="h2">OUR MISSION</h1>
           <p className="my-4 mx-lg-5 px-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, iste
-            molestiae beatae, maiores deserunt in voluptatibus aspernatur
-            architecto excepturi delectus soluta? Ipsa, deleniti dolorem hic
-            consequatur repellat eveniet quidem voluptate necessitatibus dolorum
-            delectus minus vitae, ut, veritatis sint ipsum magnam autem nam ex
-            deserunt debitis eaque ratione! Nobis, quidem assumenda.Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Neque, iste molestiae
-            beatae, maiores deserunt in voluptatibus aspernatur architecto
-            excepturi delectus soluta? Ipsa, deleniti dolorem hic consequatur
-            repellat eveniet quidem voluptate necessitatibus dolorum delectus
-            minus vitae, ut, veritatis sint ipsum magnam autem nam ex deserunt
-            debitis eaque ratione! Nobis, quidem assumenda.
+            Our mission is to empower students with the knowledge and skills to
+            engage with neurotechnology in meaningful ways. We aim to create a
+            dynamic environment where curiosity meets innovation, providing
+            hands-on experiences, discussions, and mentorship opportunities. By
+            fostering interdisciplinary collaboration, we strive to bridge the
+            gap between neuroscience, engineering, and computer science,
+            preparing members for impactful contributions in research,
+            healthcare, and industry. Through education, networking, and
+            real-world applications, we seek to inspire the next generation of
+            pioneers in brain-computer interfaces, cognitive enhancement, and
+            neuro-inspired technology.
           </p>
         </div>
       </section>
