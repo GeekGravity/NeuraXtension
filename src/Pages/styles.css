@@ -90,8 +90,7 @@ footer{
 }
 
 .homePageBtn:hover{
-    background-color: rgba(255, 255, 255, 0.836);
-    color: #07203b;
+    background-color:  rgb(206, 204, 204);
 }
 
 .homeGroupImg{
@@ -108,7 +107,7 @@ footer{
 
 .homeContent p {
     color: #07203b;
-    font-weight: 100;
+    /* font-weight: 300; */
     font-size: 1.25rem;
 }
 
@@ -274,6 +273,11 @@ footer{
     font-family: Audiowide, sans-serif;
 }
 
+.Membership button:hover{
+    background-color:  rgb(206, 204, 204);
+    color: #07203b;
+}
+
 .Membership{
     background-image: url('./Pictures/Contactbg.jpg');
     background-size: cover;
@@ -326,13 +330,12 @@ footer{
 
 
 .Contact button{
-    background-color: rgba(255, 255, 255, 0.836);
-    color: #b966bf;
+    background-color: white;
+    color: #07203b;
     width: 25%;
     font-family: Audiowide, sans-serif;
 }
 
 .Contact button:hover{
-    background-color: white;
-    color: #b966bf;
+    background-color:  rgb(206, 204, 204);
 }

@@ -11,7 +11,9 @@ function GetInvolved() {
             </p>
           </div>
           <div className="col-md-6 text-center my-md-3 py-4 my-lg-0">
-            <button className="btn btn-lg btn-secondary">Join Us!</button>
+            <a href="https://go.sfss.ca/clubs/919/info">
+              <button className="btn btn-lg btn-secondary">Join Us!</button>
+            </a>
           </div>
         </div>
       </section>
