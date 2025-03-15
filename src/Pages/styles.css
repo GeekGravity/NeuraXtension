@@ -287,6 +287,38 @@ footer{
       
 }
 
+.Oppurtunity h2{
+    font-family: Audiowide, sans-serif;
+    text-align: left;
+    font-size: 2.5em;
+    color: #07203b ;
+}
+
+.lol{
+    border: 2px solid rgba(140, 140, 140, 0.822);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.lol h4{
+    font-family: Audiowide, sans-serif;
+    color: #07203b ;
+}
+
+.lol p{
+    color: #b966bf;
+}
+
+.Oppurtunity
+ a{
+    text-decoration: none;
+}
+
+.lol:hover{
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
+}
+
 /* Contact Us */
 
 .Contact{
