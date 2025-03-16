@@ -1,25 +1,35 @@
+import { useState, useEffect } from "react";
+
 function GetInvolved() {
-  const opportunities = [
+  const [announcements, setAnnouncements] = useState<
     {
-      title: "Leadership Program",
-      description:
-        "Gain hands-on leadership experience and mentorship opportunities.",
-      image: "https://via.placeholder.com/150",
-      link: "https://www.google.com",
-    },
-    {
-      title: "Volunteer Opportunities",
-      description: "Give back to the community and develop essential skills.",
-      image: "https://via.placeholder.com/150",
-      link: "https://www.google.com",
-    },
-    {
-      title: "Networking Events",
-      description: "Meet professionals and expand your connections.",
-      image: "https://via.placeholder.com/150",
-      link: "https://www.google.com",
-    },
-  ];
+      heading: string;
+      body: string;
+    }[]
+  >([]);
+
+  useEffect(() => {
+    fetchAnnouncement();
+  }, []);
+
+  function fetchAnnouncement() {
+    fetch(
+      "https://neuroscienceclubbackend-production.up.railway.app/announcement",
+      {
+        method: "GET",
+      }
+    )
+      .then((res) => {
+        if (res.status != 200) {
+          return;
+        }
+        return res.json();
+      })
+      .then((data) => {
+        console.log(data);
+        setAnnouncements(data.announcements);
+      });
+  }
 
   return (
     <>
@@ -41,20 +51,20 @@ function GetInvolved() {
         <div className="container my-5 Oppurtunity">
           <h2 className="text-center mb-4 pb-3">Featured Opportunities</h2>
           <div className="row">
-            {opportunities.map((opportunity, index) => (
+            {announcements.map((announcement, index) => (
               <div key={index} className="col-12 mb-4">
-                <a href={opportunity.link}>
+                <a href={"https://www.google.com"}>
                   <div className="d-flex justify-content-between align-items-center p-4 lol">
                     <div>
-                      <h4>{opportunity.title}</h4>
-                      <p>{opportunity.description}</p>
+                      <h4>{announcement.heading}</h4>
+                      <p>{announcement.body}</p>
                     </div>
-                    <img
-                      src={opportunity.image}
-                      alt={opportunity.title}
+                    {/* <img
+                      src={announcement.image}
+                      alt={announcement.heading}
                       className="img-fluid"
                       style={{ width: "150px", height: "auto" }}
-                    />
+                    /> */}
                   </div>
                 </a>
               </div>

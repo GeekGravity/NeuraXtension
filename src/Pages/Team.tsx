@@ -1,5 +1,4 @@
 import "./styles.css";
-import team from "./Pictures/logo.png";
 import { useState, useEffect } from "react";
 
 function Team() {
@@ -32,7 +31,7 @@ function Team() {
   }, []);
 
   function fetchTeam() {
-    fetch("https://neuroscienceclubbackend-production.up.railway.app/", {
+    fetch("https://neuroscienceclubbackend-production.up.railway.app/execs", {
       method: "GET",
     })
       .then((res) => {
@@ -43,7 +42,7 @@ function Team() {
       })
       .then((data) => {
         console.log(data);
-        setTeamMembers(data);
+        setTeamMembers(data.execs);
       });
   }
 
@@ -60,7 +59,7 @@ function Team() {
               >
                 <img
                   className="img-fluid d-block mx-auto"
-                  src={team}
+                  src={member.profilePic}
                   id="teamphotos"
                 />
                 <div className="text-center teamMember mt-3">

@@ -4,16 +4,7 @@ import { useState } from "react";
 
 function Events() {
   const [history, setHistory] = useState("Upcoming");
-  const upcomingEvents = [
-    { id: 1, title: "Upcoming Event 1", description: "Details about event 1" },
-    { id: 2, title: "Upcoming Event 2", description: "Details about event 2" },
-    { id: 3, title: "Upcoming Event 3", description: "Details about event 3" },
-  ];
-  const pastEvents = [
-    { id: 1, title: "Past Event 1", description: "Details about event 1" },
-    { id: 2, title: "Past Event 2", description: "Details about event 2" },
-    { id: 3, title: "Past Event 3", description: "Details about event 3" },
-  ];
+
   return (
     <>
       <section className="container-fluid Events">

@@ -1,5 +1,8 @@
 import "./styles.css";
 import aboutus from "./Pictures/About-us.jpg";
+import value1 from "./Pictures/Value-1.png";
+import value2 from "./Pictures/Value-2.png";
+import value3 from "./Pictures/Value-3.png";
 import Team from "./Team";
 
 function AboutUs() {
@@ -30,13 +33,13 @@ function AboutUs() {
         <h2 className="mb-5 pb-2">OUR GOALS</h2>
         <div className="row align-items-center">
           <div className="col-lg-4 col-md-6 py-3 mx-auto value">
-            <img className="img-fluid d-block mx-auto" src={aboutus} />
+            <img className="img-fluid d-block mx-auto" src={value1} />
           </div>
           <div className="col-lg-4 col-md-6 py-3 value">
-            <img className="img-fluid d-block mx-auto" src={aboutus} />
+            <img className="img-fluid d-block mx-auto" src={value2} />
           </div>
           <div className="col-lg-4 col-md-6 pt-3 mx-auto value">
-            <img className="img-fluid d-block mx-auto" src={aboutus} />
+            <img className="img-fluid d-block mx-auto" src={value3} />
           </div>
         </div>
       </section>
