@@ -1,9 +1,63 @@
 import "./styles.css";
-import Eventimg from "./Pictures/homeGroupImg.jpg";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function Events() {
   const [history, setHistory] = useState("Upcoming");
+
+  const [pastEvents, setpastEvents] = useState<
+    {
+      name: string;
+      date: string;
+      time: string;
+      location: string;
+      description: string;
+      bannerURL: string;
+    }[]
+  >([]);
+
+  const [upcomingEvents, setupcomingEvents] = useState<
+    {
+      name: string;
+      date: string;
+      time: string;
+      location: string;
+      description: string;
+      bannerURL: string;
+    }[]
+  >([]);
+
+  useEffect(() => {
+    fetchEvents();
+  }, []);
+
+  function fetchEvents() {
+    const today = new Date();
+    fetch("https://neuroscienceclubbackend-production.up.railway.app/events", {
+      method: "GET",
+    })
+      .then((res) => {
+        if (res.status !== 200) {
+          return;
+        }
+        return res.json();
+      })
+      .then((data) => {
+        const past = [];
+        const upcoming = [];
+        console.log(data);
+        data.events.forEach((event) => {
+          const eventDate = new Date(event.date);
+          if (eventDate > today) {
+            upcoming.push(event);
+          } else {
+            past.push(event);
+          }
+        });
+
+        setpastEvents(past);
+        setupcomingEvents(upcoming);
+      });
+  }
 
   return (
     <>
@@ -37,17 +91,17 @@ function Events() {
           {(history === "Upcoming" ? upcomingEvents : pastEvents).map(
             (event) => (
               <div
-                key={event.id}
-                className="event d-block mx-auto py-3 col-sm-6 col-lg-4"
+                key={event.name + event.date}
+                className="event d-block py-3 col-sm-6 col-lg-4"
               >
                 <div className="card">
                   <img
-                    src={Eventimg}
+                    src={event.bannerURL}
                     className="card-img-top"
-                    alt={event.title}
+                    alt={event.name}
                   />
                   <div className="card-body">
-                    <h5 className="card-title">{event.title}</h5>
+                    <h5 className="card-title">{event.name}</h5>
                     <p className="card-text">{event.description}</p>
                   </div>
                 </div>

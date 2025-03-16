@@ -51,7 +51,7 @@ function Team() {
       <section className="container-fluid Team mt-5 pt-5">
         <h1>Meet Our Team</h1>
         <section className="container-fluid py-5">
-          <div className="row align-items-center">
+          <div className="row align-items-center teamMember">
             {teamMembers.map((member) => (
               <div
                 key={member.first_name}
@@ -62,8 +62,10 @@ function Team() {
                   src={member.profilePic}
                   id="teamphotos"
                 />
-                <div className="text-center teamMember mt-3">
-                  <h1>{member.first_name}</h1>
+                <div className="text-center mt-3">
+                  <h1>
+                    {member.first_name} {member.last_name}
+                  </h1>
                   <h2>{member.position}</h2>
                 </div>
               </div>

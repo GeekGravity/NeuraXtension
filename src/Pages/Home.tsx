@@ -1,5 +1,5 @@
 import homeBg from "./Pictures/homePageBg.jpg";
-import groupImg from "./Pictures/homeGroupImg.jpg";
+import groupImg from "./Pictures/About-us.jpg";
 import { useNavigate } from "react-router-dom";
 import "./styles.css";
 

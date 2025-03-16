@@ -107,7 +107,7 @@ footer{
 
 .homeContent p {
     color: #07203b;
-    /* font-weight: 300; */
+    font-weight: 100;
     font-size: 1.25rem;
 }
 
@@ -115,11 +115,11 @@ footer{
 
 .MissionBox{
     background-color: #b966bf;
-    /* border-radius: 0 0 4em 4em; */
+    overflow-x: hidden;
 }
 
 .MissionBox img{
-    width: clamp(200px, 80%, 600px);
+    width: clamp(200px, 70%, 600px);
     border-radius: 25px;
 }
 
@@ -139,7 +139,7 @@ footer{
     font-weight: bold;
     font-size: 2.5em;
     text-align: center;
-    color:#07203b ;
+    color:#b966bf ;
     margin-top: 1.5em;
 }
 
@@ -151,7 +151,7 @@ footer{
 /* Team section styling */
 
 .Team{
-    background-color: #b966bf;
+    background-color: white;
     color: white;
     border-radius: 0% 0% 0% 0%;
 }
@@ -160,24 +160,25 @@ footer{
     font-family: Audiowide, sans-serif;
     text-align: center;
     font-size: 2.5em;
-    color: white ;
+    color: #b966bf ;
 }
 
 .teamMember img{
     border-radius: 50%;
-    width: 40%;
+    width: 70%;
     height: auto;
 }
 
 .teamMember h1{
     font-family: Audiowide, sans-serif;
     font-size: 1.5em;
-    color: white;
+    color: #b966bf;
 }
 
 .teamMember h2{
     font-size: 1.2em;
-    color: white;
+    color: #b966bf;
+    font-size: 500;
 }
 
 
@@ -189,6 +190,7 @@ footer{
     background-position: center;
     background-repeat: no-repeat;
     padding: 5%;
+    height: 10%;
 }
 
 .Events h2{
@@ -244,6 +246,12 @@ footer{
     width: 95%;
 }
 
+.card img{
+    object-fit:fill;
+    height: 350px;
+}
+
+
 /* Get Involved styling */
 
 .GetInvolved{
@@ -297,16 +305,17 @@ footer{
 .lol{
     border: 2px solid rgba(140, 140, 140, 0.822);
     border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 10px #07203b93;
+    background-color: #b966bf;
 }
 
 .lol h4{
     font-family: Audiowide, sans-serif;
-    color: #07203b ;
+    color: white ;
 }
 
 .lol p{
-    color: #b966bf;
+    color: #07203b;
 }
 
 .Oppurtunity
