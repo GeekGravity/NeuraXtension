@@ -51,24 +51,31 @@ function GetInvolved() {
         <div className="container my-5 Oppurtunity">
           <h2 className="text-center mb-4 pb-3">Featured Opportunities</h2>
           <div className="row">
-            {announcements.map((announcement, index) => (
-              <div key={index} className="col-12 mb-4">
-                <a href={"https://www.google.com"}>
-                  <div className="d-flex justify-content-between align-items-center p-4 lol">
-                    <div>
-                      <h4>{announcement.heading}</h4>
-                      <p>{announcement.body}</p>
+            {announcements.length === 0 ? (
+              <p className="errormsg mb-5 mt-3">
+                Looks like there are no opportunities available right now. Stay
+                tuned for updates!
+              </p>
+            ) : (
+              announcements.map((announcement, index) => (
+                <div key={index} className="col-12 mb-4">
+                  <a href={"https://www.google.com"}>
+                    <div className="d-flex justify-content-between align-items-center p-4 lol">
+                      <div>
+                        <h4>{announcement.heading}</h4>
+                        <p>{announcement.body}</p>
+                      </div>
+                      {/* <img
+                        src={announcement.image}
+                        alt={announcement.heading}
+                        className="img-fluid"
+                        style={{ width: "150px", height: "auto" }}
+                      /> */}
                     </div>
-                    {/* <img
-                      src={announcement.image}
-                      alt={announcement.heading}
-                      className="img-fluid"
-                      style={{ width: "150px", height: "auto" }}
-                    /> */}
-                  </div>
-                </a>
-              </div>
-            ))}
+                  </a>
+                </div>
+              ))
+            )}
           </div>
         </div>
       </section>

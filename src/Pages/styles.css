@@ -323,6 +323,12 @@ footer{
     text-decoration: none;
 }
 
+.Oppurtunity .errormsg{
+    text-align: center;
+    font-size: 1.7em;
+    font-weight: 100;
+}
+
 .lol:hover{
     transform: scale(1.02);
     transition: transform 0.3s ease-in-out;
