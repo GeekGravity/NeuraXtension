@@ -190,7 +190,7 @@ footer{
     background-position: center;
     background-repeat: no-repeat;
     padding: 5%;
-    height: 10%;
+    min-height: 70vh;
 }
 
 .Events h2{
@@ -240,10 +240,17 @@ footer{
     color: white;
 }
 
+.Events .errormsg{
+    text-align: left;
+    font-size: 2em;
+    font-weight: 100;
+    color: white;
+}
+
 .card{
     background-color: #07203b;
     color: white;
-    width: 95%;
+    width: 75%;
 }
 
 .card img{

@@ -88,8 +88,34 @@ function Events() {
           </a>
         </div>
         <div className="row align-items-center py-5">
-          {(history === "Upcoming" ? upcomingEvents : pastEvents).map(
-            (event) => (
+          {history === "Upcoming" ? (
+            upcomingEvents.length === 0 ? (
+              <p className="errormsg mt-5 py-5">
+                Looks like there are no events coming up right now. Stay tuned
+                for updates!
+              </p>
+            ) : (
+              upcomingEvents.map((event) => (
+                <div
+                  key={event.name + event.date}
+                  className="event d-block py-3 col-sm-6 col-lg-4"
+                >
+                  <div className="card">
+                    <img
+                      src={event.bannerURL}
+                      className="card-img-top"
+                      alt={event.name}
+                    />
+                    <div className="card-body">
+                      <h5 className="card-title">{event.name}</h5>
+                      <p className="card-text">{event.description}</p>
+                    </div>
+                  </div>
+                </div>
+              ))
+            )
+          ) : (
+            pastEvents.map((event) => (
               <div
                 key={event.name + event.date}
                 className="event d-block py-3 col-sm-6 col-lg-4"
@@ -106,7 +132,7 @@ function Events() {
                   </div>
                 </div>
               </div>
-            )
+            ))
           )}
         </div>
       </section>
