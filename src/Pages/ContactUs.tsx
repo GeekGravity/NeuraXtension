@@ -1,10 +1,11 @@
 import "./styles.css";
 
 function ContactUs() {
-  const submitForm = async (e) => {
+  const submitForm = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    const formData = new FormData(e.target);
+    const form = e.target as HTMLFormElement;
+    const formData = new FormData(form);
     const payLoad = {
       first_name: formData.get("firstName"),
       last_name: formData.get("lastName"),
@@ -26,7 +27,7 @@ function ContactUs() {
 
       if (response.ok) {
         alert("Form submitted successfully!");
-        e.target.reset();
+        form.reset();
       } else {
         alert("Failed to submit the form.");
       }
@@ -94,7 +95,7 @@ function ContactUs() {
               className="form-control"
               id="message"
               name="message"
-              rows="4"
+              rows={4}
               placeholder="Enter your message"
               required
             ></textarea>

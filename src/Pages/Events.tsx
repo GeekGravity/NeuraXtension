@@ -42,9 +42,12 @@ function Events() {
         return res.json();
       })
       .then((data) => {
+        // @ts-ignore
         const past = [];
+        // @ts-ignore
         const upcoming = [];
         console.log(data);
+        // @ts-ignore
         data.events.forEach((event) => {
           const eventDate = new Date(event.date);
           if (eventDate > today) {
@@ -53,8 +56,9 @@ function Events() {
             past.push(event);
           }
         });
-
+        // @ts-ignore
         setpastEvents(past);
+        // @ts-ignore
         setupcomingEvents(upcoming);
       });
   }
