@@ -1,30 +1,21 @@
 import "./styles.css";
 import { useState, useEffect } from "react";
 
+interface eventype {
+  name: string;
+  date: string;
+  time: string;
+  location: string;
+  description: string;
+  bannerURL: string;
+}
+
 function Events() {
   const [history, setHistory] = useState("Upcoming");
 
-  const [pastEvents, setpastEvents] = useState<
-    {
-      name: string;
-      date: string;
-      time: string;
-      location: string;
-      description: string;
-      bannerURL: string;
-    }[]
-  >([]);
+  const [pastEvents, setpastEvents] = useState<eventype[]>([]);
 
-  const [upcomingEvents, setupcomingEvents] = useState<
-    {
-      name: string;
-      date: string;
-      time: string;
-      location: string;
-      description: string;
-      bannerURL: string;
-    }[]
-  >([]);
+  const [upcomingEvents, setupcomingEvents] = useState<eventype[]>([]);
 
   useEffect(() => {
     fetchEvents();
@@ -42,13 +33,11 @@ function Events() {
         return res.json();
       })
       .then((data) => {
-        // @ts-ignore
-        const past = [];
-        // @ts-ignore
-        const upcoming = [];
+        const past: eventype[] = [];
+        const upcoming: eventype[] = [];
         console.log(data);
-        // @ts-ignore
-        data.events.forEach((event) => {
+
+        data.events.forEach((event: eventype) => {
           const eventDate = new Date(event.date);
           if (eventDate > today) {
             upcoming.push(event);
@@ -56,9 +45,7 @@ function Events() {
             past.push(event);
           }
         });
-        // @ts-ignore
         setpastEvents(past);
-        // @ts-ignore
         setupcomingEvents(upcoming);
       });
   }
