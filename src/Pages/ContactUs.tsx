@@ -1,13 +1,39 @@
 import "./styles.css";
 
 function ContactUs() {
-  const submitForm = (e) => {
+  const submitForm = async (e) => {
     e.preventDefault();
 
     const formData = new FormData(e.target);
-    const payLoad = Object.fromEntries(formData);
+    const payLoad = {
+      first_name: formData.get("firstName"),
+      last_name: formData.get("lastName"),
+      email: formData.get("email"),
+      body: formData.get("message"),
+    };
 
-    console.log(payLoad);
+    try {
+      const response = await fetch(
+        "https://neuroscienceclubbackend-production.up.railway.app/form/send",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(payLoad),
+        }
+      );
+
+      if (response.ok) {
+        alert("Form submitted successfully!");
+        e.target.reset();
+      } else {
+        alert("Failed to submit the form.");
+      }
+    } catch (err) {
+      console.error("Error submitting form:", err);
+      alert("An error occurred.");
+    }
   };
 
   return (

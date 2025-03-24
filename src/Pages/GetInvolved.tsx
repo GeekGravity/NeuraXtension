@@ -5,6 +5,7 @@ function GetInvolved() {
     {
       heading: string;
       body: string;
+      url: string;
     }[]
   >([]);
 
@@ -43,7 +44,7 @@ function GetInvolved() {
             </p>
           </div>
           <div className="col-md-6 text-center my-md-3 py-4 my-lg-0">
-            <a href="https://go.sfss.ca/clubs/919/info">
+            <a href={"https://go.sfss.ca/clubs/919/info"}>
               <button className="btn btn-lg btn-secondary">Join Us!</button>
             </a>
           </div>
@@ -59,7 +60,7 @@ function GetInvolved() {
             ) : (
               announcements.map((announcement, index) => (
                 <div key={index} className="col-12 mb-4">
-                  <a href={"https://www.google.com"}>
+                  <a href={announcement.url}>
                     <div className="d-flex justify-content-between align-items-center p-4 lol">
                       <div>
                         <h4>{announcement.heading}</h4>
