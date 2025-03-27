@@ -310,15 +310,15 @@ footer{
 }
 
 .lol{
-    border: 2px solid rgba(140, 140, 140, 0.822);
+    border: 1px solid #07203b;
     border-radius: 10px;
-    box-shadow: 5px 5px 10px #07203b93;
-    background-color: #b966bf;
+    box-shadow: 5px 5px 10px rgb(145, 145, 145);
+    /* background-color: #b966bf; */
 }
 
 .lol h4{
     font-family: Audiowide, sans-serif;
-    color: white ;
+    color: #b966bf ;
 }
 
 .lol p{
