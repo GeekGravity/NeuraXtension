@@ -33,10 +33,10 @@ function Home() {
           <div className="col-lg-6 text-center my-md-5 pt-3 homeContent">
             <h2>WHO WE ARE</h2>
             <p className="my-4 mx-5">
-              NeuraXtension is Simon Fraser University’s neurotechnology club,
+              NeuraXtension is Simon Fraser University's neurotechnology club,
               dedicated to exploring the intersection of neuroscience and
               technology. We provide SFU students with opportunities to learn
-              about neurotechnology’s role in research, healthcare, and industry
+              about neurotechnology's role in research, healthcare, and industry
               through workshops, seminars, and networking events. Whether you're
               interested in brain-computer interfaces, cognitive enhancement, or
               neuro-inspired AI, our club fosters a collaborative space to

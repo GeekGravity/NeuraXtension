@@ -8,26 +8,28 @@ import Team from "./Team";
 function AboutUs() {
   return (
     <>
-      <section className="row align-items-center MissionBox py-4">
-        <div className="row">
-          <div className="col-md-6 col-12 mb-4 py-md-5">
-            <img className="img-fluid d-block mx-auto" src={aboutus} />
-          </div>
-          <div className="col-md-6 col-12 text-center my-2 py-md-5 my-lg-0">
-            <h1 className="h2">Mission</h1>
-            <p className="my-4 mx-lg-5 px-2">
-              Our mission is to empower students with the knowledge and skills
-              to engage with neurotechnology in meaningful ways. We aim to
-              create a dynamic environment where curiosity meets innovation,
-              providing hands-on experiences, discussions, and mentorship
-              opportunities. By fostering interdisciplinary collaboration, we
-              strive to bridge the gap between neuroscience, engineering, and
-              computer science, preparing members for impactful contributions in
-              research, healthcare, and industry. Through education, networking,
-              and real-world applications, we seek to inspire the next
-              generation of pioneers in brain-computer interfaces, cognitive
-              enhancement, and neuro-inspired technology.
-            </p>
+      <section className="MissionBox py-4">
+        <div className="container-fluid py-5">
+          <div className="row align-items-center">
+            <div className="col-lg-6 my-3 d-flex justify-content-center">
+              <img className="img-fluid" src={aboutus} />
+            </div>
+            <div className="col-lg-6 text-center my-md-5 pt-3">
+              <h2>Mission</h2>
+              <p className="my-4 mx-5">
+                Our mission is to empower students with the knowledge and skills
+                to engage with neurotechnology in meaningful ways. We aim to
+                create a dynamic environment where curiosity meets innovation,
+                providing hands-on experiences, discussions, and mentorship
+                opportunities. By fostering interdisciplinary collaboration, we
+                strive to bridge the gap between neuroscience, engineering, and
+                computer science, preparing members for impactful contributions
+                in research, healthcare, and industry. Through education,
+                networking, and real-world applications, we seek to inspire the
+                next generation of pioneers in brain-computer interfaces,
+                cognitive enhancement, and neuro-inspired technology.
+              </p>
+            </div>
           </div>
         </div>
       </section>

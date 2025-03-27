@@ -39,7 +39,7 @@ function Footer() {
               <FontAwesomeIcon icon={faDiscord} size="2x" />
             </a>
             <a
-              href="https://www.instagram.com/neuraxtension_sfu/"
+              href="https://www.instagram.com/sfu_neuraxtension/"
               className="text-light mx-2"
               target="_blank"
               rel="noopener noreferrer"
@@ -54,7 +54,7 @@ function Footer() {
             Home
             <br />
           </a>
-          <a href="/Mission">
+          <a href="/About-Us">
             About Us
             <br />
           </a>
