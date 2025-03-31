@@ -1,5 +1,5 @@
 import "./styles.css";
-import aboutus from "./Pictures/homeGroupImg.jpg";
+import aboutus from "./Pictures/Team/Team_SS.jpg";
 import value1 from "./Pictures/Value-1.png";
 import value2 from "./Pictures/Value-2.png";
 import value3 from "./Pictures/Value-3.png";
